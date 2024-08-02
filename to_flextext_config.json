@@ -1,0 +1,36 @@
+{
+    "file_names":[
+        ""
+    ],
+    "language_fonts":[
+        {
+            "lang":"",
+            "font":"",
+            "vernacular":""
+        }
+    ],
+    "languages":{
+        "main_language":"",
+        "child_language":"",
+        "flex_language":""
+    },
+    "valid_characters": {
+        "main_language":"",
+        "child_language":""
+    },
+    "exclude_tier_id":[
+        ""
+    ],
+    "exclude_tier_type":[
+        ""
+    ],
+    "exclude_tier_constraint":[
+        ""
+    ],
+    "translation_tiers":{
+        "":""
+    },
+    "target_utterance_tier_type":[
+        ""
+    ]
+}

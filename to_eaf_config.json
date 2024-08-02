@@ -1,0 +1,29 @@
+{
+    "eafs_flextexts":[
+        {
+            "original_eaf":"",
+            "flextext":""
+        }
+    ],
+    "language": "",
+    "child_language":"",
+    "speakers":{
+        "":{
+            "name":"",
+            "kid":0
+        }
+    },
+    "translations":[
+        ""
+    ],
+    "languages":[
+        {
+            "LANG_DEF":"",
+            "LANG_ID":"",
+            "LANG_LABEL":""
+        }
+    ],
+    "xds":[
+        ""
+    ]
+}
