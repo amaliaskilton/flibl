@@ -43,7 +43,7 @@ Flibl expects your input ELAN file to have the following characteristics.
 
 You can check tier and type attributes in the Tier and Type menus. 
 
-The [sample ELAN file](https://osf.io/kaqr3/files/osfstorage/661570bf943bee38eedfeddb) in this documentation can be used as a template for formatting your ELAN file.
+The [sample ELAN file](https://github.com/amaliaskilton/flibl/blob/ed45b2a690a8c87b8463fcbb43985ce2cc0e0444/example_eaf/YDN_202001_a_1.1_redacted.eaf) in this documentation can be used as a template for formatting your ELAN file.
 
 ### What if you have the translations in time-aligned tiers?
 
@@ -402,9 +402,3 @@ When you're setting up the config file for processing multiple files, you can in
 Using the command line can look a bit scary! It seems like you're a hacker all of a sudden and that might make you think that you have just a bit more power than you're comfortable with. First of all, definitely make sure you have backups. Secondly, know that nothing in this program will ever overwrite or delete existing files. Rather, it will create files and these will be labelled based on date and time that they were created so you can know which run of Flibl was used for the creation of it.
 ## Is there seriously no way to do this with a graphical user interface (GUI)?
 This is a slightly more complicated and ideological question. The short answer is yes, there is a way to do this with a GUI, but at the loss of maximal compatibility and flexibility. 
-
-
-  [1]: https://mfr.osf.io/export?url=https://osf.io/download/5kch2/?direct=&mode=render&format=2400x2400.jpeg
-  [2]: https://mfr.osf.io/export?url=https://osf.io/download/dk6zp/?direct=&mode=render&format=2400x2400.jpeg
-  [3]: https://mfr.osf.io/export?url=https://osf.io/download/pm2aw/?direct=&mode=render&format=2400x2400.jpeg
-  [4]: https://mfr.osf.io/export?url=https://osf.io/download/f783v/?direct=&mode=render&format=2400x2400.jpeg
