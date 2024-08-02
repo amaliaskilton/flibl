@@ -140,13 +140,13 @@ The next section explains what all of the fields in the configuration file mean.
     - For all of this information, go into FLEx and find it under Tools > Configure > Set up Vernacular/Analysis Writing Systems. You'll find the code under the General tab, and the font under the Font tab.
         - How to access the Set Up Writing Systems dialogs:
           
-         ![Screenshot from FLEx, in the Texts & Words panel, following the above described path to an option box that includes Set up Vernacular Writing Systems... and Set up Analysis Writing Systems...][1]
+         ![Screenshot from FLEx, in the Texts & Words panel, following the above described path to an option box that includes Set up Vernacular Writing Systems... and Set up Analysis Writing Systems...]![font_setup](https://github.com/user-attachments/assets/8bb1e636-2fc7-4cbc-a88b-a881e153d62b)
         - After choosing Set Up Writing Systems, how to find the code for a language:
           
-         ![Screenshot from FLEx, within the box that comes up after choosing one of the Set up Writing Systems options, showing a General tab active, with a Code below it and the text "mto" next to that][2]
+         ![Screenshot from FLEx, within the box that comes up after choosing one of the Set up Writing Systems options, showing a General tab active, with a Code below it and the text "mto" next to that]![writing_sys_code](https://github.com/user-attachments/assets/b9baa4f5-1e9c-4043-978d-bbf91866f308)
         - After choosing Set Up Writing Systems, how to find the font for a language:
           
-         ![Screenshot from FLEx, within the box that comes up after choosing one of the Set up Writing Systems options, showing a Font tab active, with "Default font" below it and the text "Noto Sans" within a drop-down box][3]
+         ![Screenshot from FLEx, within the box that comes up after choosing one of the Set up Writing Systems options, showing a Font tab active, with "Default font" below it and the text "Noto Sans" within a drop-down box]![writing_sys_font](https://github.com/user-attachments/assets/366fe1df-71fc-4949-9580-e03f474491bd)
 
 ### Languages
 - **What is this for?**: here you should put in the names of the writing systems for the languages you are working with. These should correspond with the codes you gave above in the "Language fonts" section.
@@ -172,7 +172,8 @@ The next section explains what all of the fields in the configuration file mean.
     - You'll need to make sure FLEx will consider all of these characters as word-forming and not punctuation, which can be adjusted in the Writing systems configuration in FLEx. Refer back to the screenshots above to get to the Vernacular Writing System Properties window and click on the Characters tab, then click on Valid Characters... . Use this interface to see which characters FLEx sees as valid for the "vernacular" language, (adjust it if you haven't before,) and use the Word Forming set at the top to make your Regular Expression for the configuration file.
       
       The Valid Characters dialog looks like this:
-      ![Screenshot from FLEx showing the writing system character setup. On the right are two sets of characters, one in a box labelled "Word forming" and the other, below, labelled "Punctuation, Symbols & Spaces". Both boxes have characters that would correspond to those sets.][4]
+      ![Screenshot from FLEx showing the writing system character setup. On the right are two sets of characters, one in a box labelled "Word forming" and the other, below, labelled "Punctuation, Symbols & Spaces". Both boxes have characters that would correspond to those sets.]![valid_char_choices](https://github.com/user-attachments/assets/bcb51861-06aa-4598-9737-bb6b63949d24)
+
     - Since many writing systems use glottal stops marked by some kind of apostrophe-like symbol, but there's a ton that look similar but are indeed different, here's a bunch of apostrophes so you can allow all of them, just in case the wrong kind snuck into your text: '`ꞌꞋ'‘’. If you want to check the Unicode escape for a character, we recommend [this UniView app](https://r12a.github.io/uniview/index.html), where you can copy and paste a character into the box and see information about it, or go the other direction and start from information about a character like its Unicode block name or escape and see the character itself. Another option is thie [Unicode code converter](https://r12a.github.io/app-conversion/index.html) which also lets you go in both directions, and you can just type an entire string in whichever box is appropriate for what you're trying to do.
 
 ### Exclude tier IDs
