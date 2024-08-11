@@ -178,6 +178,7 @@ The next section explains what all of the fields in the configuration file mean.
   ```
         
 - **Additional information**
+    - The notation `\u00EB` (and others) is hexadecimal Python source code notation for Unicode characters such as ë. There are many online converters to work between the hexadecimal codes and characters (https://r12a.github.io/app-conversion/ is one).
     - You only need to do this with "vernacular" languages (i.e. not any lingua francas/"analysis languages"). FLEx needs to separate the words of a text before importing it, but this is not important for the Free Translations
     - You'll need to make sure FLEx will consider all of these characters as word-forming and not punctuation, which can be adjusted in the Writing systems configuration in FLEx. Refer back to the screenshots above to get to the Vernacular Writing System Properties window and click on the Characters tab, then click on Valid Characters... . Use this interface to see which characters FLEx sees as valid for the "vernacular" language, (adjust it if you haven't before,) and use the Word Forming set at the top to make your Regular Expression for the configuration file.
       
