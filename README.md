@@ -43,7 +43,7 @@ Using Flibl will involve opening configuration files in a text editor, such as g
 # ELAN File Format
 Flibl expects your input ELAN file to have the following characteristics. 
 
-1. Transcription tier: The EAF must contain at least one time-aligned transcription tier. All transcription tiers which you want to analyze should have the same linguistic type. This type should have the Time-Aligned stereotype.
+1. Transcription tier: The EAF must contain at least one time-aligned transcription tier. All transcription tiers which you want to analyze should have the same linguistic type. In earlier versions of ELAN, this was labeled the Time-Aligned stereotype. In later versions, the parent tiers have no stereotype but ther eis a check-box to mark them as "time-aligned".
 2. Symbolic Association tiers: All tiers besides the time-aligned tier should belong to types with the Symbolic Association stereotype. Tiers with the same kind of data (e.g. translations, notes, target utterances) should have the same type. The transcription tier should be the parent of all of the Symbolic Association tiers.
 3. All tiers: All tiers should have a participant attribute in the Tiers dialog. The participant attribute should be repeated as the first element of the tier name. 
 
