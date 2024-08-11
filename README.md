@@ -30,6 +30,12 @@ Flibl is a tool to bolster the transfer of texts between ELAN and FLEx (and FLEx
     * *Do not change any line breaks.*
     * Editing Flibl's notes or changing line breaks will break the FLEx to ELAN export.
 * When exporting your FLExText after glossing, make sure that all fields are visible in the Texts module before you interactively export. This will ensure that you are exporting all of the information from the morphologically parsed text. Flibl includes as much as possible, so the user can decide what to exclude after exporting to ELAN.
+* In the language list, `child_language` should be set to the same ISO code as `main_language`.
+*  In a file with no child language, the following points are also important
+  * No additional language beyond what's actually in the file should be included in the `language_fonts` list
+  * For the `valid_characters` list the same list of characters should be repeated for the `child_language` 
+  * The `target utterance tier type` should be blank
+ 
 
 # Opening Configuration Files
 Using Flibl will involve opening configuration files in a text editor, such as gedit, textedit, or notepad. If you want something fancier, people often opt for something like [VSCode](https://code.visualstudio.com/), but it's not necessary. Do not edit the files in Word, as that will likely introduce problems that cause them to not run (e.g. smart quotes, saving in a different format). You will also need to run the scripts in Python, which involves opening a Terminal/Console window and typing `python ` or `python3 ` and then the name of the script (e.g. `python flexible.py`).
@@ -44,6 +50,8 @@ Flibl expects your input ELAN file to have the following characteristics.
 You can check tier and type attributes in the Tier and Type menus. 
 
 The [sample ELAN file](/example_eaf/YDN_202001_a_1.1_redacted.eaf) in this documentation can be used as a template for formatting your ELAN file.
+
+As of August, 2024, we are running into issues with non-ASCII characters and conversions across different platforms. We are actively working on this issue. 
 
 ### What if you have the translations in time-aligned tiers?
 
