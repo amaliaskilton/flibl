@@ -30,15 +30,10 @@ Flibl is a tool to bolster the transfer of texts between ELAN and FLEx (and FLEx
     * *Do not change any line breaks.*
     * Editing Flibl's notes or changing line breaks will break the FLEx to ELAN export.
 * When exporting your FLExText after glossing, make sure that all fields are visible in the Texts module before you interactively export. This will ensure that you are exporting all of the information from the morphologically parsed text. Flibl includes as much as possible, so the user can decide what to exclude after exporting to ELAN.
-* In the language list, `child_language` should be set to the same ISO code as `main_language`.
-*  In a file with no child language, the following points are also important
-  * No additional language beyond what's actually in the file should be included in the `language_fonts` list
-  * For the `valid_characters` list the same list of characters should be repeated for the `child_language` 
-  * The `target utterance tier type` should be blank
  
 
 # Opening Configuration Files
-Using Flibl will involve opening configuration files in a text editor, such as gedit, textedit, or notepad. If you want something fancier, people often opt for something like [VSCode](https://code.visualstudio.com/), but it's not necessary. Do not edit the files in Word, as that will likely introduce problems that cause them to not run (e.g. smart quotes, saving in a different format). You will also need to run the scripts in Python, which involves opening a Terminal/Console window and typing `python ` or `python3 ` and then the name of the script (e.g. `python flexible.py`).
+Using Flibl will involve opening configuration files in a text editor, such as gedit, TextEdit, or Notepad. If you want something fancier, people often opt for something like [VSCode](https://code.visualstudio.com/), but it's not necessary. Do not edit the files in Word, as that will likely introduce problems that cause them to not run (e.g. smart quotes, saving in a different format). You will also need to run the scripts in Python, which involves opening a Terminal/Console window and typing `python ` or `python3 ` and then the name of the script (e.g. `python flexible.py`).
 
 # ELAN File Format
 Flibl expects your input ELAN file to have the following characteristics. 
@@ -49,9 +44,9 @@ Flibl expects your input ELAN file to have the following characteristics.
 
 You can check tier and type attributes in the Tier and Type menus. 
 
-The [sample ELAN file](/example_eaf/YDN_202001_a_1.1_redacted.eaf) in this documentation can be used as a template for formatting your ELAN file. When converting files previously created, it is easy to overlook these steps. We recommend making an ELAN template that conforms to these specifications.
+The [sample ELAN files](/example_eafs_and_configs) in this documentation can be used as templates for formatting your ELAN file. When converting files previously created, it is easy to overlook these steps. We recommend making an ELAN template that conforms to these specifications.
 
-As of August, 2024, we are running into issues with non-ASCII characters and conversions across different platforms. We are actively working on this issue. 
+As of August 2024, we are running into issues with converting EAFs that contain non-ASCII characters, specifically non-ASCII characters with combining diacritics, on Windows. We are actively working on this issue. 
 
 ### What if you have the translations in time-aligned tiers?
 
@@ -113,7 +108,7 @@ In order to get started with the ELAN to FLEx conversion, you need to create a c
 
 When you're setting up the config file for processing multiple files, you can include the information for all the texts and Flibl will only use what is relevant for a given file when it is processing it. That said, make sure that none of the information is contradictory (e.g. if a Tier Type is not to be included in one text but is in another).
 
-The next section explains what all of the fields in the configuration file mean.
+The next section explains what all of the fields in the configuration file mean. Some of these fields will be treated differently if your file does vs. doesn't contain child language. See the 'Files with no child language' section.
 
 ## Fields in `to_flextext_config`
 ### File names
@@ -243,7 +238,17 @@ The next section explains what all of the fields in the configuration file mean.
       "target_utterance_tier_type": ["Target Utterance"]
   ```
 - **Additional information**
-    - Note that all target tiers must have the same Tier Type and that this field is for the Tier *Type*, not the tier name. See above for more information on finding this in the ELAN interface. 
+    - Note that all target tiers must have the same Tier Type and that this field is for the Tier *Type*, not the tier name. See above for more information on finding this in the ELAN interface.
+ 
+## Creating the config file for a transcript with no child language
+If your EAF does not contain child language (more precise: doesn't have a tier with target/adult-like forms of child utterances), you will not use all of the config fields listed above. Instead:
+
+* In the language list, set `child_language` to the same ISO code as `main_language`
+* No additional language beyond what's actually in the file should be included in the `language_fonts` list
+* For the `valid_characters` list the same list of characters should be repeated for the `child_language`
+* The `target utterance tier type` should be blank
+
+See the [sample ELAN and config files with no child language](/example_eafs_and_configs/has_child_language) for examples of how to set up the config file for a transcript like this.
 
 # Going from FLEx to ELAN
 Once you have a text that has been parsed to your satisfaction in FLEx, you can now export it and use Flibl to ensure that it keeps important information as you open it in ELAN. If you have gone through the process of exporting from FLEx and importing to ELAN before, this will be different - Flibl foregoes the built-in Import process in ELAN and creates the EAF file for you instead.
@@ -407,6 +412,10 @@ When you're setting up the config file for processing multiple files, you can in
     ```
 - **Additional information**
     - If you don't have a tier with XDS, you don't need to worry about it. If you want to use this tier for some other purpose, nothing will break. An example of an alternative use case would be if you have a controlled vocabulary of codes for a particular construction is used (e.g. [CASE MATCH], [CASE MISMATCH]). If you want a tier that has only these codes, you can enter them in this field. Again, Flibl will look for these controlled vocabulary items in the *Notes*, not strings within the transcribed text.
+
+### Creating the config file for a transcript with no child language
+
+See the [sample ELAN, FLExText, and config files with no child language](/example_eafs_and_configs/no_child_language) for examples of how to set up the config file for a transcript without child language.
 
 # FAQ
 ## What the heck is "command line"? What happens if I mess something up?
