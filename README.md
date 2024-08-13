@@ -125,7 +125,7 @@ The next section explains what all of the fields in the configuration file mean.
 
 ### Language fonts
 - **What is this for?** This section provides information for FLEx about language, script, and font. 
-    - **Language/`lang`:** the code used by FLEx to identify this language/script. Give the FLEx code (e.g. "es" for Spanish). Often this is only two letters for the Analysis language but three letters (frequently corresponding to the ISO 639-3 code) for the Vernacular language. You will have specified this code when you set up your project. It's also used as part of the project sync settings if you use LanguageDepot.
+    - **Language/`lang`:** the code used by FLEx to identify this language/script. Give the FLEx code (e.g. "es" for Spanish). Often this is only two letters for the Analysis language but three letters (frequently corresponding to the ISO 639-3 code) for the Vernacular language. You will have specified this code when you set up your project. It's also used as part of the project sync settings if you use LanguageDepot. Some language codes are the three-letter ISO code plus an extension, such as `-fonipa-X-etic`.
     - **font:** the name of the font used in FLEx for this language
     - **vernacular:** "true" or "false" - true if the language is going to be treated as a language of "study", false if it is only used for the translations and/or notes. For example, a person studying Quechua but translating and glossing in Spanish would put "true" on the line describing Quechua, and "false" on the line about Spanish.
 - **Example**:
