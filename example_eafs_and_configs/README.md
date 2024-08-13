@@ -14,4 +14,4 @@ Example files are in Ticuna. They were created in Cushillococha, Loreto, Peru by
   * Recorded in 2019 and transcribed in 2022.
   * Recordings are archived as [California Language Archive 2018-19.044](http://dx.doi.org/doi:10.7297/X2W66J11)
 
-In all files, the transcription tiers have the type `tca` and use an ASCII-only practical orthography that represents all of the phonemic contrasts. The `no_child_language` file also has transcription tiers in the official Peruvian Ticuna orthography with the type `tca-po`. These are not imported to FLEx with these config files.
+In all files, the transcription tiers have the type `tca` and use an ASCII-only practical orthography that represents all of the phonemic contrasts. The `no_child_language` file also has transcription tiers in the official Peruvian Ticuna orthography with the type `tca-po`. Only the `tca` tiers are imported to FLEx with these config files.
