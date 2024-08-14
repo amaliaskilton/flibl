@@ -1,0 +1,63 @@
+{
+    "file_names":[
+        "tca_20220427_conv_lfg-mfg-lvi_video_kiu_00m-to-20m_edited.eaf"
+    ],
+    "language_fonts":[
+        {
+            "lang":"tca-fonipa-x-etic",
+            "font":"Charis SIL",
+            "vernacular":"true"
+        },
+        {
+            "lang":"es",
+            "font":"Charis SIL",
+            "vernacular":"false"
+        },
+        {
+            "lang":"en",
+            "font":"Charis SIL",
+            "vernacular":"false"
+        }
+    ],
+    "languages":{
+        "main_language":"tca-fonipa-x-etic",
+        "child_language":"tca-fonipa-x-etic",
+        "flex_language":"en"
+    },
+    "valid_characters": {
+        "main_language":"0-9A-Za-z\\+#_",
+        "child_language":"0-9A-Za-z\\+#_"
+    },
+    "exclude_tier_id":[
+        ""
+    ],
+    "exclude_tier_type":[
+        "tca-po"
+    ],
+    "exclude_tier_constraint":[
+        ""
+    ],
+    "translation_tiers":{
+        "Liceth-tns-es":"es",
+	"Menrys-tns-es":"es",
+	"Victoria-tns-es":"es",
+	"Nina1-tns-es":"es",
+	"Nina2-tns-es":"es",
+	"Nina3-tns-es":"es",
+	"Nina4-tns-es":"es",
+	"Hombre1-tns-es":"es",
+	"Amalia-tns-es":"es",
+        "Liceth-tns-en":"en",
+	"Menrys-tns-en":"en",
+	"Victoria-tns-en":"en",
+	"Nina1-tns-en":"en",
+	"Nina2-tns-en":"en",
+	"Nina3-tns-en":"en",
+	"Nina4-tns-en":"en",
+	"Hombre1-tns-en":"en",
+	"Amalia-tns-en":"en"
+    },
+    "target_utterance_tier_type":[
+        ""
+    ]
+}
