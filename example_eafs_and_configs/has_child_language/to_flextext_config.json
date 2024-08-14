@@ -1,0 +1,61 @@
+{
+    "file_names":[
+        "tca_201909_child_child22_cci_video_ahs_gaze_vc_recoded_tns_ag_complete.eaf"
+    ],
+    "language_fonts":[
+        {
+            "lang":"tca-fonipa-x-etic",
+            "font":"Charis SIL",
+            "vernacular":"true"
+        },
+        {
+            "lang":"es",
+            "font":"Charis SIL",
+            "vernacular":"false"
+        },
+        {
+            "lang":"en",
+            "font":"Charis SIL",
+            "vernacular":"false"
+        }
+    ],
+    "languages":{
+        "main_language":"tca-fonipa-x-etic",
+        "child_language":"tca-fonipa-x-etic",
+        "flex_language":"en"
+    },
+    "valid_characters": {
+        "main_language":"0-9A-Za-z\\+#_",
+        "child_language":"0-9A-Za-z\\+#_"
+    },
+    "exclude_tier_id":[
+        ""
+    ],
+    "exclude_tier_type":[
+        "activity","gaze","formation","jac","xda"
+    ],
+    "exclude_tier_constraint":[
+        ""
+    ],
+    "translation_tiers":{
+        "CHI-tns":"es",
+        "Caregiver-tns":"es",
+        "FA1-tns":"es",
+        "MC1-tns":"es",
+        "MC2-tns":"es",
+        "FA2-tns":"es",
+        "MA1-tns":"es",
+        "FA3-tns":"es",
+        "CHI-tns-en":"en",
+        "Caregiver-tns-en":"en",
+        "FA1-tns-en":"en",
+        "MC1-tns-en":"en",
+        "MC2-tns-en":"en",
+        "FA2-tns-en":"en",
+        "MA1-tns-en":"en",
+        "FA3-tns-en":"en"
+    },
+    "target_utterance_tier_type":[
+        "target"
+    ]
+}
