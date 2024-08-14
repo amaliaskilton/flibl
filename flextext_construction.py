@@ -29,7 +29,7 @@ for name in config["file_names"]:
     # Generate the title
     title = ET.Element("item", attrib={"type":"title", "lang":flex_language})
     # Truncate the path to be just the file name without the extension
-    eaf_split_pattern = re.compile("[^/]+\.eaf")
+    eaf_split_pattern = re.compile("[^/]+\\.eaf")
     title_match = eaf_split_pattern.search(file_name)[0][:-4]
     title.text = title_match
     # Right now, being in beta, we are titling the text and naming the file using the date and time of creation, so you can keep track of different versions in case things go awry and you have to delete something.
