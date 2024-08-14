@@ -156,7 +156,7 @@ The next section explains what all of the fields in the configuration file mean.
 ### Languages
 - **What is this for?**: here you should put in the names of the writing systems for the languages you are working with. These should correspond with the codes you gave above in the "Language fonts" section.
     - **Primary vernacular writing sys**: the equivalent of FLEx's "vernacular" language, but more specifically is the code you are using for the language of study in FLEx.
-    - **Child language writing sys**: if you are setting up child/ungrammatical utterances as a different writing system, this is where you should put that code.
+    - **Child language writing sys**: if you are setting up child/ungrammatical utterances as a different writing system, this is where you should put that code. If you have no child utterances or you're using the same writing system for children and adults, repeat the `main_language` code here.
     - **FLEx language writing sys**: the language you have configured FLEx to use, such as English (en), Spanish (es), or Portuguese (pt), among others.
 - **Example**:
    - Treating adult and child Ayöök (mto) as different languages:
@@ -245,7 +245,7 @@ If your EAF does not contain child language (more precise: doesn't have a tier w
 
 * In the language list, set `child_language` to the same ISO code as `main_language`
 * No additional language beyond what's actually in the file should be included in the `language_fonts` list
-* For the `valid_characters` list the same list of characters should be repeated for the `child_language`
+* For the `valid_characters` list, the same list of characters should be repeated for the `child_language`
 * The `target utterance tier type` should be blank
 
 See the [sample ELAN and config files with no child language](/example_eafs_and_configs/has_child_language) for examples of how to set up the config file for a transcript like this.
@@ -324,7 +324,7 @@ When you're setting up the config file for processing multiple files, you can in
      "child_language": "cps"
      ```
 - **Additional information**
-    - If you didn't have Child/Ungrammatical utterances using a different language code, you do not need this.
+    - If you didn't have Child/Ungrammatical utterances using a different language code, enter the same code here as for `language`.
 
 ### Speakers
 - **What is this for?**: This is information about the speakers who are represented in the ELAN file. FLEx keeps information about the speakers in some ways, but gets rid of a lot of it in the re-export (which is partially why we need to have the original EAF to refer to when constructing the new one).
@@ -404,9 +404,8 @@ When you're setting up the config file for processing multiple files, you can in
         "T+A",
         "T+C",
         "T+C+A",
-        "ANTA",
-        "ANTC",
-        "ANTS",
+        "N",
+        "NA",
         "U"
     ]
     ```
@@ -415,7 +414,7 @@ When you're setting up the config file for processing multiple files, you can in
 
 ### Creating the config file for a transcript with no child language
 
-See the [sample ELAN, FLExText, and config files with no child language](/example_eafs_and_configs/no_child_language) for examples of how to set up the config file for a transcript without child language.
+The only difference between transcripts with and without child language for this conversion is that, if you have no child language, you should use the same code for the `language` and `child_language` fields in `to_eaf_config.json`. See the [sample ELAN, FLExText, and config files with no child language](/example_eafs_and_configs/no_child_language) for examples of how to set up the config file for a transcript without child language.
 
 # FAQ
 ## What the heck is "command line"? What happens if I mess something up?
