@@ -133,10 +133,7 @@ for name in config["file_names"]:
             notes.append(note)
         # Add the notes needed to indicate metadata
         phonetic_note = ET.Element("item", attrib={"type":"note", "lang":flex_language})
-        if target:
-            phonetic_note.text = "Target"
-        else:
-            phonetic_note.text = "Phonetic"
+        phonetic_note.text = "Phonetic"
         notes.append(phonetic_note)
         id_note = ET.Element("item", attrib={"type":"note", "lang":flex_language})
         id_note.text = aID
