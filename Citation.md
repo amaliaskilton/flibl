@@ -6,4 +6,4 @@ Ananthanarayan, Sunkulp; Amalia Skilton; Sofia Gottlieb Pierson; Claire Bowern. 
 
 You can cite the paper describing Flibl as follows:
 
-Skilton, Amalia; Sunkulp Ananthanarayan; Sofia Gottlieb Pierson; Claire Bowern. accepted. Flibl: A tool to ease text transfer between ELAN and FLEx. *Language Documentation & Conservation*.
+Skilton, Amalia; Sunkulp Ananthanarayan; Sofia Gottlieb Pierson; Claire Bowern. 2025. Flibl: A tool to ease text transfer between ELAN and FLEx. *Language Documentation & Conservation* 19: 158-175. https://hdl.handle.net/10125/74815
