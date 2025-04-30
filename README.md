@@ -1,4 +1,6 @@
-Flibl is a tool to bolster the transfer of texts between ELAN and FLEx (and FLEx and ELAN). It runs as a set of python scripts with a configuration file that specifies user settings. Flibl converts files from ELAN to FLEx (and vice versa) through a JSON-like interchange format. The process, rationale, and background are described in a paper under review.
+Flibl is a tool to bolster the transfer of texts between ELAN and FLEx (and FLEx and ELAN). It runs as a set of python scripts with a configuration file that specifies user settings. Flibl converts files from ELAN to FLEx (and vice versa) through a JSON-like interchange format. 
+
+The process, rationale, and background are described in [this paper in Language Documentation & Conservation (open access)](https://hdl.handle.net/10125/74815). By downloading and using Flibl, you agree to [cite the software or the paper](Citation.md) in any publication where it has been used. 
 
 # Requirements
 * Python 3.10.x+
